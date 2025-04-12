@@ -2,57 +2,60 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Jowe Boy&apos;s Website</title>
+		<title>Jowe Boy's Website</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
-
 	<body>
 		<header>
 			<div class="row">
-				<div class="logo">
-					<img src="assets/logo-new.png" alt="oe_logo">
-				</div>
 				<ul class="main-nav">
-					<li class="active"><a href="">HOME</a></li>
-					<li><a href="">SERVICES</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">BLOG</a></li>
-					<li><a href="">CONTACT</a></li>
-					<li><a href="">FAQ</a></li>
+					<li class="active"><a href="#">INICIO</a></li>
+					<li><a href="#service">SERVICIOS</a></li>
+					<li><a href="#about">SOBRE NOSOTROS</a></li>
+					<li><a href="#blog">BLOG</a></li>
+					<li><a href="#adopt">CONTACTO</a></li>
+					<li><a href="#faq">PREGUNTAS FRECUENTES</a></li>
 				</ul>
 			</div>
 			<div class="hero">
-				<h1>Ready for Action?</h1>
+				<h1>No compres ¡Adopta!</h1>
 				<div class="button">
-					<a href="" class="btn btn-one">Watch Video</a>
-					<a href="" class="btn btn-two">Explore More</a>
+					<a href="#adopt" class="btn btn-one">¡Quiero adoptar!</a>
+					<a href="#about" class="btn btn-two">Explorar</a>
 				</div>
 			</div>
 		</header>
-		<section class="service grid-container">
+
+		<section class="service grid-container" id="service">
 		</section>
-		<section class="about grid-container">
+
+		<section class="about grid-container" id="about">
+			<div class="grid-item"></div>
+			<div class="grid-item about-text">
+				<h2>Sobre Nosotros</h2>
+				<p>
+					Somos una organización dedicada a conectar mascotas rescatadas con hogares llenos de amor.
+				</p>
+				<p>
+					Creemos que cada animal merece una segunda oportunidad y trabajamos para facilitar el proceso de adopción, garantizando que cada mascota encuentre una familia que la cuide y valore.
+				</p>
+			</div>
 		</section>
-		<section class="blog grid-container">
-		</section>
-		<section class="contact grid-container">
+
+		<section class="contact grid-container" id="adopt">
 			<div class="contact-form grid-item">
 				<div class="contact-section-header">
-					<h2>Get in touch with us!</h2>
+					<h2>¡Ponte en contacto con nosotros!</h2>
 				</div>
 				<form class="form">
-					<input type="text" name="fullname" placeholder="Fullname">
-					<input type="email" name="email" placeholder="Email Address">
-					<input type="number" name="phonenumber" placeholder="Phone Number">
-					<textarea class="subject" name="subject" placeholder="Your subject here..."></textarea>
-					<input class="button" type="submit" value="Submit">
+					<input type="text" name="fullname" placeholder="Nombre completo" aria-label="Nombre completo">
+					<input type="email" name="email" placeholder="Dirección de email" aria-label="Email">
+					<input type="number" name="phonenumber" placeholder="Número de teléfono" aria-label="Teléfono">
+					<textarea class="subject" name="subject" placeholder="¿Por qué quieres adoptar una mascota?" aria-label="Motivo de adopción"></textarea>
+					<input class="button" type="submit" value="Enviar">
 				</form>
 			</div>
-			<div class="contact-form grid-item">
-			</div>
-		</section>
-		<section class="faq grid-container">
+			<div class="contact-form grid-item"></div>
 		</section>
 	</body>
-
 </html>
